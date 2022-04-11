@@ -1,33 +1,33 @@
-let fucti=['olma','anor','uzum','apelsin']
+let fucti = ['olma', 'anor', 'uzum', 'apelsin']
 
-let x=''
+let x = ''
 
-for(const iii of fucti ){
-    x=x+`<li> ${iii}</li>`
+for (const iii of fucti) {
+    x = x + `<li> ${iii}</li>`
 }
 
 document.getElementById('zzz').innerHTML = x
 
 
-let name=['Anvar', '25','+998991553047']
-let y=''
-for(let num of name){
-    y=y+`<td> ${num}</td>`
+let name = [{
+        names: 'Anvar',
+        age: 26,
+        number: +998991553047
+    },
+    {
+        names: 'Ali',
+        age: 25,
+        number: +998991553011
+    },
+    {
+        names: 'Mansur',
+        age: 24,
+        number: +998991553055
+    },
+]
+let y = ''
+for (let i = 0; i < name.length; i++) {
+    y = y + `<tbody><tr><td>${name[i].names}</td> <td>${name[i].age}</td> <td>${name[i].number}</td></tr></tbody>`
 }
+
 document.getElementById('pp').innerHTML = y
-
-let name1=['Sobirjon','20','+998994552619']
-let s=''
-for(let num1 of name1){
-    s=s+`<td> ${num1} </td>`
-}
-document.getElementById('pp1').innerHTML =s;    
-
-let name2 = ['Muxammadjon','18','+998997564424']
-let h=''
-for(let numd of name2 ){
-    h=h+`<td> ${numd}</td>`
-
-}
-document.getElementById('ppq').innerHTML = h
-    
